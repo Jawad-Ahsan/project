@@ -137,7 +137,7 @@ const LandingPage = () => {
         className="relative h-screen flex items-center justify-center bg-cover bg-center overflow-hidden"
         style={{
           backgroundImage:
-            "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1502920514313-52581002a659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1467&q=80')",
+            "linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://i.ytimg.com/vi/KgUw5CydS5Q/maxresdefault.jpg",
         }}
       >
         <motion.div
@@ -171,15 +171,17 @@ const LandingPage = () => {
             className="flex gap-4 justify-center"
           >
             <motion.button
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, cursor: "pointer" }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => (window.location.href = "/signup")}
               className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-lg"
             >
               Learn More
             </motion.button>
             <motion.button
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.05, cursor: "pointer" }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => (window.location.href = "/signup")}
               className="bg-transparent hover:bg-gray-800 text-white font-bold py-3 px-6 border border-white rounded-lg"
             >
               Join Us
@@ -395,8 +397,10 @@ const LandingPage = () => {
               whileHover={{
                 scale: 1.05,
                 boxShadow: "0 0 15px rgba(234, 179, 8, 0.5)",
+                cursor: "pointer",
               }}
               whileTap={{ scale: 0.95 }}
+              onClick={() => (window.location.href = "/signup")}
               className="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-8 rounded-lg text-lg"
             >
               Enlist Now
